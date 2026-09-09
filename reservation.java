@@ -1,6 +1,6 @@
 public class reservation{
-    public Utilisateur codeID;
-    public Utilisateur nom;
+    public utilisateur codeID;
+    public utilisateur nom;
     public ressources nomRess;
     public ressources numero;
     public ressources dispo;

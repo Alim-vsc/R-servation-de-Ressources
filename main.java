@@ -1,6 +1,6 @@
 public class main {
     public static void main(String[] args) {
-        Utilisateur OMAR=new Utilisateur(2,"OMAR","omar@gmail");
+        utilisateur OMAR=new utilisateur(2,"OMAR","omar@gmail");
         OMAR.afficherUtilisateur();
         ressources videoprojecteur=new ressources(1,"videoprojecteur",true);
         videoprojecteur.afficheRessource();

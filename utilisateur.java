@@ -1,7 +1,7 @@
 public class utilisateur{int codeID;
     String nom;
     String email;
-    public Utilisateur(int codeID,String nom,String email) {
+    public utilisateur(int codeID,String nom,String email) {
         this.codeID = codeID;
         this.nom=nom;
         this.email=email;
