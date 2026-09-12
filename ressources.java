@@ -1,6 +1,6 @@
 public class ressources{
-    int numero;
-    String nomRess;
+    private int numero;
+    private String nomRess;
     boolean dispo;
     public ressources( int numero,String nomRess,boolean dispo){
         this.numero=numero;
@@ -11,12 +11,12 @@ public class ressources{
         return dispo;
     }
     
-    public string getnomRess(){
-        returm nomRess;
+    public String getnomRess(){
+        return nomRess;
     }
     
     public int getnumero(){
-        retur numero;
+        return numero;
     }
 
     public void afficheRessource(){
@@ -29,7 +29,10 @@ public class ressources{
    }
    @Override
     public String toString(){
-        return("le numero est "+numero+" et le nom est "+nom);
+        return("le numero est "+numero+" et le nom est "+nomRess);
 
+    }
+    public int dureeMaxReservation(){
+        return 0;
     }
 }

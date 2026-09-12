@@ -1,7 +1,7 @@
 public class MaterielMobile extends ressources{
     String categorie;
-    public MaterielMobile(int numero,String nom,String categorie){
-        super( numero,nom);
+    public MaterielMobile(int numero,String nomRess,String categorie){
+        super(numero,nomRess,true);
         this.categorie=categorie;
     }
     public String getcategorie(){

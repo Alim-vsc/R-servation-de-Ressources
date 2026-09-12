@@ -1,14 +1,14 @@
 public class salle extends ressources{
     int capacite;
-    public salle(int numero,String nom,int capacite){
-        super(numero, nom);
+    public salle(int numero,String nomRess,int capacite){
+        super(numero,nomRess,true);
         this.capacite=capacite;
     }
     public  int getcapacite(){
         return capacite;
 
     }
-     @Override 
+    @Override 
     public int dureeMaxReservation(){
         return 4;
     }

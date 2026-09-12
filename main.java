@@ -2,19 +2,22 @@ public class main {
     public static void main(String[] args) {
         ressources salleA=new salle(10,"salleA",40);
         ressources projecteurA=new MaterielMobile(15,"projecteur02","videoProjecteur");
-        ressources pc=new MaterielMoblie(20,"pc01","ordinateur portable");
+        ressources pc=new MaterielMobile(20,"pc01","ordinateur portable");
         System.out.println(pc.toString());
-        System.out. println(projecteurA.tostring());
+        System.out. println(projecteurA.toString());
         System.out.println(pc.dureeMaxReservation());
-        salleA.reserve();
-        salleA.dureeMaxReservation();
-        pc.dureeMaxReservation();
+        System.out.println(salleA.dureeMaxReservation());
+        salleA.reserver();
         projecteurA.dureeMaxReservation();
-        System.out.println(salleA.getdisponible());
-        System.out.println(pc.getdisponible());
-        System.out.println(projecteurA.getdisponible());
+        System.out.println(salleA.getdispo());
         salleA.liberer();
-        System.out.print(pc.getdisponible());
+        System.out.println(salleA.getdispo());
+        projecteurA.reserver();
+        System.out.println(pc.getdispo());
+        System.out.println(projecteurA.getdispo());
+        projecteurA.liberer();
+        System.out.println(projecteurA.getdispo());
+        System.out.print(pc.getdispo());
     }
 }
 
