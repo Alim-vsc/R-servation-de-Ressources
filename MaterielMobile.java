@@ -1,6 +1,6 @@
-public class materiel extends ressources{
+public class MaterielMobile extends ressources{
     String categorie;
-    public materiel(int numero,String nom,String categorie){
+    public MaterielMobile(int numero,String nom,String categorie){
         super( numero,nom);
         this.categorie=categorie;
     }
@@ -16,3 +16,11 @@ public class materiel extends ressources{
     public int dureeMaxReservation(){
         return 8;
     }
+    @Override 
+    public void liberer(){
+        dispo=true;
+    }
+    public void reserver(){
+        dispo=false;
+    }
+}

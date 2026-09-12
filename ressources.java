@@ -22,4 +22,14 @@ public class ressources{
     public void afficheRessource(){
         System.out.println(" le nom du materiel est "+nomRess+" son numero est "+numero);
     }
+    public void reserver(){
+
+   }
+   public void liberer(){
+   }
+   @Override
+    public String toString(){
+        return("le numero est "+numero+" et le nom est "+nom);
+
+    }
 }
