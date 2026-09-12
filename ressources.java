@@ -6,7 +6,17 @@ public class ressources{
         this.numero=numero;
         this.nomRess=nomRess;
         this.dispo=true;
-
+    }
+    public boolean getdispo(){
+        return dispo;
+    }
+    
+    public string getnomRess(){
+        returm nomRess;
+    }
+    
+    public int getnumero(){
+        retur numero;
     }
 
     public void afficheRessource(){
