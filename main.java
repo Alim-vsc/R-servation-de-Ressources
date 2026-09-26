@@ -1,9 +1,9 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
-        ressources salleA=new salle(10,"salleA",40);
-        ressources projecteurA=new MaterielMobile(15,"projecteur02","videoProjecteur");
-        ressources pc=new MaterielMobile(20,"pc01","ordinateur portable");
-        utilisateur user=new utilisateur(001,"Omar","omar@example.com");
+        Ressources salleA=new Salle(10,"salleA",40);
+        Ressources projecteurA=new MaterielMobile(15,"projecteur02","videoProjecteur");
+        Ressources pc=new MaterielMobile(20,"pc01","ordinateur portable");
+        Utilisateur user=new Utilisateur(001,"Omar","omar@example.com");
         System.out.println(user.getnom());
         user.afficherUtilisateur();
         System.out.println(pc.toString());

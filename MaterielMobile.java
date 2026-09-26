@@ -1,4 +1,4 @@
-public class MaterielMobile extends ressources{
+public class MaterielMobile extends Ressources{
     String categorie;
     public MaterielMobile(int numero,String nomRess,String categorie){
         super(numero,nomRess,true);

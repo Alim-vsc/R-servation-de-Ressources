@@ -1,6 +1,6 @@
-public class salle extends ressources{
+public class Salle extends Ressources{
     int capacite;
-    public salle(int numero,String nomRess,int capacite){
+    public Salle(int numero,String nomRess,int capacite){
         super(numero,nomRess,true);
         this.capacite=capacite;
     }

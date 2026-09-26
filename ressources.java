@@ -1,8 +1,8 @@
-public class ressources{
+public abstract class Ressources{
     private int numero;
     private String nomRess;
     boolean dispo;
-    public ressources( int numero,String nomRess,boolean dispo){
+    public Ressources( int numero,String nomRess,boolean dispo){
         this.numero=numero;
         this.nomRess=nomRess;
         this.dispo=true;
@@ -32,7 +32,7 @@ public class ressources{
         return("le numero est "+numero+" et le nom est "+nomRess);
 
     }
-    public int dureeMaxReservation(){
+    public  int dureeMaxReservation(){
         return 0;
     }
 }
