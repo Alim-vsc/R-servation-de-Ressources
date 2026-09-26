@@ -32,7 +32,7 @@ public abstract class Ressources{
         return("le numero est "+numero+" et le nom est "+nomRess);
 
     }
-    public  int dureeMaxReservation(){
+    public abstract int dureeMaxReservation(){
         return 0;
     }
 }
