@@ -1,4 +1,4 @@
-public abstract class Ressources{
+public abstract class Ressources implements Reservable{
     private int numero;
     private String nomRess;
     boolean dispo;
@@ -22,17 +22,12 @@ public abstract class Ressources{
     public void afficheRessource(){
         System.out.println(" le nom du materiel est "+nomRess+" son numero est "+numero);
     }
-    public void reserver(){
-
-   }
-   public void liberer(){
-   }
    @Override
     public String toString(){
         return("le numero est "+numero+" et le nom est "+nomRess);
 
     }
-    public abstract int dureeMaxReservation(){
+    public int dureeMaxReservation(){
         return 0;
     }
 }

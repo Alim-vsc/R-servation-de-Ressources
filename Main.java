@@ -11,11 +11,13 @@ public class Main {
         System.out.println(pc.dureeMaxReservation());
         System.out.println(salleA.dureeMaxReservation());
         salleA.reserver();
+        System.out.println(salleA.estreserve());
         projecteurA.dureeMaxReservation();
         System.out.println(salleA.getdispo());
         salleA.liberer();
         System.out.println(salleA.getdispo());
         projecteurA.reserver();
+        System.out.println(projecteurA.estreserve());
         System.out.println(pc.getdispo());
         System.out.println(projecteurA.getdispo());
         projecteurA.liberer();

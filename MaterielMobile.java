@@ -9,8 +9,7 @@ public class MaterielMobile extends Ressources{
     }
     @Override
     public String toString(){
-       super.toString();
-       return("lacategorie est "+categorie);
+         return ("la categorie est "+categorie );
     }
     @Override
     public int dureeMaxReservation(){
@@ -18,9 +17,27 @@ public class MaterielMobile extends Ressources{
     }
     @Override 
     public void liberer(){
+        if (dispo==false){
         dispo=true;
+        System.out.println("Le materiel est disponible ");
+        }
+        else{
+            System.out.println("Le materirel est deja liberé");
+        }
     }
+    @Override
     public void reserver(){
+        if(dispo==true){
         dispo=false;
+        System.out.println("La reservation du materiel est validée");
+        }
+        else{
+            System.out.println("Le materiel est deja reservé");
+        }
+    }
+    @Override 
+    public String  estreserve(){
+        return (dispo?"disponible":"indisponible");
+        
     }
 }
