@@ -1,4 +1,5 @@
-public class Utilisateur{int codeID;
+public class Utilisateur{
+    int codeID;
     String nom;
     String email;
     public Utilisateur(int codeID,String nom,String email) {

@@ -1,8 +1,8 @@
 Ce projet est une application qui met en œuvre un système permettant à un établissement de gérer la réservation de ses différentes ressources (salles, matériel mobile). En effet face aux multiples erreurs de réservations et de perte des matériels au sein de cet établissement, l’objectif principal de notre travail est de créer un programme informatique permettant la gestion de ces différents types de ressources (matériels et salles) tout   en appliquant rigoureusement des principes de durée d’utilisations et simplifier la vie des utilisateurs. 
 Le système est ainsi structuré autour de plusieurs classes cruciales telles que :
- 1.) Ressource (Classe mère) : elle contient les éléments fondamentaux 
-Attributs privés : Int numéro, String nom, Boolean disponible
-Méthodes clés :  libérer (), toString (), réserver ()
+ 1.) Ressource (Classe mère et abstraite) : elle contient les éléments fondamentaux 
+Attributs privés : Int numéro, String nomRess, Boolean dispo
+Méthodes clées :  libérer (), toString (), réserver ()
 Méthode : dureeMaxReservation () implantée spécialement par chaque classe fille.
 2.) La classe Salle.java (classe fille) :  elle decoule de la classe Ressource
 Attributs privés : Int numéro, String nom, Boolean disponible
